@@ -1,0 +1,174 @@
+/* src/assets/fonts/br-firma.css */
+@font-face {
+    font-family: 'BR-Firma-Black';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Black.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Black.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Black.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Black-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Black-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Black-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Black-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Bold';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Bold.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Bold.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Bold.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Bold-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Bold-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Bold-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Bold-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Extra-Light';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Extra-Light';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Extra-Light-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Extra-Light-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Light';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Light.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Light';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Light.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Light.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Light-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Light-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Light-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Light-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Medium';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Medium.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Medium.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Medium.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Medium-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Medium-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Medium-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Medium-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Medium-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Medium-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Medium-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Medium-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Regular';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Regular.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Regular.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Regular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Regular-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Regular-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Regular-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Regular-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-SemiBold';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-SemiBold.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-SemiBold.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-SemiBold.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-SemiBold-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-SemiBold-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-SemiBold-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-SemiBold-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Thin';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Thin.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Thin.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Thin.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR-Firma-Thin-Italic';
+    src: url(@/assets/fonts/Br-Firma/BR-Firma-Thin-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Thin-Italic.otf) format('otf'),
+    url(@/assets/fonts/Br-Firma/BR-Firma-Thin-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
