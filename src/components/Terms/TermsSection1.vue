@@ -100,5 +100,22 @@ export default {
   margin-left: auto;
   padding-bottom: 20px;
   font-weight: 600;
+  font-family: 'BR-Firma-Bold', sans-serif;
+}
+
+@media (max-width: 990px) {
+}
+
+@media (max-width: 700px) {
+  .text-1{
+    width: 90%;
+  }
+  .text-2{
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+
 }
 </style>

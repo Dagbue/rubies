@@ -62,11 +62,11 @@ export default {
   text-align: center;
   margin-bottom: 20px;
   color: #FFFFFF;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.015em;
   text-align: center;
@@ -103,19 +103,34 @@ export default {
 }
 
 @media (max-width: 700px) {
-  .image{
-    width: 100%;
-  }
-
   .text-1{
-    font-size: 45px;
-    line-height: 50px;
-    margin-bottom: 8px;
+    font-size: 43px;
+    line-height: 45px;
+    margin-bottom: 9px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .text-2{
     font-size: 16px;
-    line-height: 22px;
+    line-height: 23px;
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-1{
+    height: 45px;
+    padding: 8px 16px;
+    gap: 6px;
+    width: 170px;
+    font-size: 14px;
+  }
+
+  .image{
+    width: 100%;
   }
 }
 

@@ -93,6 +93,7 @@ export default {
   height: 244px;
   background-color: #F9FAFB;
   border-radius: 16px;
+  margin-top: 1%;
 }
 
 .section-1{
@@ -105,6 +106,7 @@ export default {
   line-height: 44px;
   padding-top: 6%;
   padding-bottom: 2%;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 section {
@@ -259,6 +261,15 @@ details {
   }
   section {
     width: 82%;
+  }
+
+  .alpha-2{
+    width: 95%;
+    height: unset;
+    padding-bottom: 6%;
+  }
+  .last-text{
+    font-size: 27px;
   }
 }
 </style>

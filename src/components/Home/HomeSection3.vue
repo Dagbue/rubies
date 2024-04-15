@@ -4,8 +4,8 @@
     <div class="section-alpha">
 
       <div class="section-2">
-<!--        <img src="@/assets/cards.svg" alt="" class="image" />-->
-        <video  loop autoplay playsinline class="responsive-video" :src="videoSource" />
+        <img src="@/assets/video-card-image.svg" alt="" class="image" />
+<!--        <video  loop autoplay playsinline class="responsive-video" :src="videoSource" />-->
       </div>
 
       <div class="section-1">
@@ -70,6 +70,7 @@ video.responsive-video {
   letter-spacing: -0.01em;
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{

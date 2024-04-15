@@ -59,6 +59,7 @@ export default {
   line-height: 64px; /* 100% */
   letter-spacing: -0.64px;
   padding-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .section-2{
@@ -72,7 +73,7 @@ export default {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 26px; /* 133.333% */
   letter-spacing: -0.27px;
 }
 
@@ -113,5 +114,35 @@ export default {
   justify-content: center;
   gap: 30px;
   margin-top: 25px;
+}
+
+@media (max-width: 850px) {
+  .alpha{
+    width: 90%;
+    height: 479px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .text-1{
+    font-size: 50px;
+    line-height: 60px; /* 100% */
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5.5%;
+  }
+
+  .text-2{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
 }
 </style>

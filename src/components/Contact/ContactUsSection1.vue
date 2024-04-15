@@ -50,6 +50,11 @@
                                   rows="4"
                                   placeholder="Leave us a message..."
                                   required
+                                  style="
+                                    font-family: 'BR-Firma-Regular', sans-serif;
+                                    letter-spacing: 1.5px;
+                                    font-size: 13px;
+"
                               ></textarea>
               </div>
 
@@ -134,6 +139,7 @@ export default {
   line-height: 44px;
   padding-bottom: 10px;
   color: #101828;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .contact-form_paragraph {
@@ -236,6 +242,21 @@ export default {
 @media (max-width: 800px) {
   .contact-form{
     margin-left: 11%;
+  }
+
+  .section-alpha{
+    display: block;
+  }
+
+  .section-1{
+    width: 100%;
+  }
+
+  .section-2{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -52,6 +52,7 @@ export default {
   line-height: 64px; /* 100% */
   letter-spacing: -0.64px;
   padding-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .section-2{
@@ -65,7 +66,7 @@ export default {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 25px; /* 133.333% */
   letter-spacing: -0.27px;
 }
 
@@ -77,7 +78,7 @@ export default {
   justify-content: center;
   height: 50px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 12px;
   gap: 8px;
   background-color: #F7F8F8;
   width: 170px;
@@ -93,7 +94,7 @@ export default {
   justify-content: center;
   height: 50px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 12px;
   gap: 8px;
   background-color: #191C1F;
   width: 170px;
@@ -106,5 +107,39 @@ export default {
   justify-content: center;
   gap: 30px;
   margin-top: 25px;
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .alpha{
+    height: 90vh;
+  }
+
+  .text-1{
+    font-size: 60px;
+    line-height: 60px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .text-2{
+    color: #868C98;
+    text-align: center;
+    font-feature-settings: 'ss11' on, 'cv09' on, 'liga' off, 'calt' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 133.333% */
+    letter-spacing: -0.27px;
+  }
+}
+
+@media (max-width: 500px) {
+
 }
 </style>

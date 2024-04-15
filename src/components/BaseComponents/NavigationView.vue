@@ -77,8 +77,9 @@
           </ul>
 
           <div v-show="!mobile" class="button-part">
-            <p class="auth">Log In</p>
-            <p class="auth2">Sign Up</p>
+            <p class="auth2">Download Now</p>
+<!--            <p class="auth">Log In</p>-->
+<!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -157,9 +158,12 @@
 
           </ul>
 
+
+
           <div v-show="!mobile" class="button-part">
-            <p class="auth">Log In</p>
-            <p class="auth2">Sign Up</p>
+            <p class="auth2">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -238,8 +242,9 @@
           </ul>
 
           <div v-show="!mobile" class="button-part">
-            <p class="auth">Log In</p>
-            <p class="auth2">Sign Up</p>
+            <p class="auth2">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -317,8 +322,9 @@
           </ul>
 
           <div v-show="!mobile" class="button-part">
-            <p class="auth">Log In</p>
-            <p class="auth2">Sign Up</p>
+            <p class="auth2">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -394,9 +400,11 @@
 
           </ul>
 
+
           <div v-show="!mobile" class="button-part">
-            <p style="color: #ffffff" class="auth">Log In</p>
-            <p class="auth3">Sign Up</p>
+            <p style="color: #ffffff" class="auth">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -473,8 +481,9 @@
           </ul>
 
           <div v-show="!mobile" class="button-part">
-            <p style="color: #ffffff" class="auth">Log In</p>
-            <p class="auth3">Sign Up</p>
+            <p style="color: #ffffff" class="auth">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -550,9 +559,11 @@
 
           </ul>
 
+
           <div v-show="!mobile" class="button-part">
-            <p style="color: #ffffff" class="auth">Log In</p>
-            <p class="auth3">Sign Up</p>
+            <p style="color: #ffffff" class="auth">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -628,9 +639,11 @@
 
           </ul>
 
+
           <div v-show="!mobile" class="button-part">
-            <p style="color: #ffffff" class="auth">Log In</p>
-            <p class="auth3">Sign Up</p>
+            <p style="color: #ffffff" class="auth">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -707,8 +720,9 @@
           </ul>
 
           <div v-show="!mobile" class="button-part">
-            <p style="color: #ffffff" class="auth">Log In</p>
-            <p class="auth3">Sign Up</p>
+            <p style="color: #ffffff" class="auth">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -787,8 +801,9 @@
           </ul>
 
           <div v-show="!mobile" class="button-part">
-            <p class="auth">Log In</p>
-            <p class="auth2">Sign Up</p>
+            <p class="auth2">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
           </div>
 
         </div>
@@ -1146,15 +1161,15 @@ export default {
   background-color: transparent;
   border: 0.5px solid #EEF0F1;
   color: #191C1F;
-  padding: 0.4em 30px 0.5em 30px;
-  border-radius: 5px;
+  padding: 0.6em 30px 0.5em 30px;
+  border-radius: 12px;
   position: relative;
   display: inline-block;
   text-decoration: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.25s ease;
   margin: 0 2.5px;
-  width: 120px;
+  width: 100%;
   text-align: center;
   font-size: 14px;
 }
@@ -1168,15 +1183,15 @@ export default {
   background-color: #191C1F;
   border: 1px solid #191C1F;
   color: #ffffff;
-  padding: 0.4em 30px 0.5em 30px;
-  border-radius: 5px;
+  padding: 0.6em 30px 0.5em 30px;
+  border-radius: 12px;
   position: relative;
   display: inline-block;
   text-decoration: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.25s ease;
   margin: 0 2.5px;
-  width: 120px;
+  width: 100%;
   text-align: center;
   font-size: 14px;
 }
@@ -1191,7 +1206,7 @@ export default {
   border: 1px solid #ffffff;
   color: #191C1F;
   padding: 0.4em 30px 0.5em 30px;
-  border-radius: 5px;
+  border-radius: 12px;
   position: relative;
   display: inline-block;
   text-decoration: none;

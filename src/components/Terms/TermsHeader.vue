@@ -53,6 +53,7 @@ export default {
   line-height: 64px; /* 100% */
   letter-spacing: -0.64px;
   padding-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .section-2{
@@ -76,41 +77,31 @@ export default {
 }
 
 
-.btn-1{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 50px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  gap: 8px;
-  background-color: #F7F8F8;
-  width: 170px;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-  color: #191C1F;
+@media (max-width: 990px) {
 }
 
-.btn-2{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 50px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  gap: 8px;
-  background-color: #191C1F;
-  width: 170px;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-  color: #FFFFFF;
+@media (max-width: 700px) {
+  .alpha{
+    height: 100%;
+    background-size: cover;
+  }
+  .section-2{
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+
+  .text-1{
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .text-2{
+    width: 90%;
+  }
+
 }
-.btn-alpha{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 25px;
+
+@media (max-width: 500px) {
+
 }
 </style>

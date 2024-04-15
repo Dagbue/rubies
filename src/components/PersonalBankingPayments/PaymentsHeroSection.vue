@@ -72,6 +72,7 @@ export default {
   letter-spacing: -0.01em;
   text-align: left;
   margin-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
@@ -97,7 +98,7 @@ export default {
   justify-content: center;
   height: 50px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 12px;
   gap: 8px;
   background-color: #191C1F;
   width: 180px;
@@ -155,51 +156,54 @@ span{
   border-radius: 100px;
   margin-left: 5px;
 }
+
 @media (max-width: 990px) {
 }
 
 @media (max-width: 700px) {
+  .section-1-alpha{
+    display: block;
+  }
+  .section-1{
+    width: 100%;
+    margin-left: unset;
+  }
 
+  .image-section{
+    width: 100%;
+    margin-right: unset;
+  }
   .text-1{
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 44px;
+    line-height: 45px;
     margin-bottom: 8px;
+    text-align: center;
   }
 
   .text-2{
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .section-3{
-    /*display: block;*/
-    display: flex;
-    flex-direction: column;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-  }
-
-  .section-3-inner{
-    margin-bottom: 10px;
-  }
-
-  .text-3{
-    font-size: 15px;
-  }
-
-}
-
-@media (max-width: 500px) {
-  .text-1{
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 9px;
-  }
-
-  .text-2{
-    width: 85%;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    width: 90%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .btn-1{
+    height: 45px;
+    padding: 8px 16px;
+    gap: 6px;
+    width: 170px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+
+
 }
 </style>

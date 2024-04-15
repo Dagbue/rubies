@@ -167,6 +167,7 @@ hr.new1 {
   font-weight: 600;
   line-height: 30px; /* 128.571% */
   letter-spacing: 0.12px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 .text-4{
   color: #697582;

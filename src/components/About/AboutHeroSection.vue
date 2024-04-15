@@ -53,6 +53,7 @@ export default {
   letter-spacing: -0.01em;
   text-align: center;
   margin-bottom: 8px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
@@ -72,7 +73,7 @@ export default {
   justify-content: center;
   height: 50px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 12px;
   gap: 8px;
   background-color: #191C1F;
   width: 180px;
@@ -105,6 +106,10 @@ export default {
   .text-2{
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .btn-1{
+    height: 48px;
   }
 }
 

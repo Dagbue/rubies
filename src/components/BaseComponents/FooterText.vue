@@ -3,8 +3,8 @@
     <div class="section-1-alpha">
       <div class="section-1">
         <p class="text-1">Join Rubies and <br/> experience greatness</p>
-        <p class="text-2">Embrace the power of unified communication and financial management <br/> with Rubies. Chat,
-          send money, pay bills, and more—all within one <br/> innovative app for ultimate convenience and control.</p>
+        <p class="text-2">Embrace the power of unified communication and financial management with Rubies. Chat,
+          send money, pay bills, and more—all within one  innovative app for ultimate convenience and control.</p>
         <p class="text-2">Download the Rubies app</p>
         <!--        <div class="btn-1">-->
         <!--          Get Started-->
@@ -20,62 +20,7 @@
       </div>
     </div>
 
-<!--    <div class="reduce">-->
-<!--      <div class="section-2">-->
 
-<!--        <img src="@/assets/Logo.svg" alt="icon-logo" class="icon-logo"/>-->
-
-<!--        <div class="section-alpha">-->
-<!--          <img src="@/assets/facebook.svg" alt="icon-socials" class="icon-socials"/>-->
-<!--          <img src="@/assets/Instagram.svg" alt="icon-socials" class="icon-socials"/>-->
-<!--          <img src="@/assets/Twitter.svg" alt="icon-socials" class="icon-socials"/>-->
-<!--          <img src="@/assets/LinkedIn.svg" alt="icon-socials" class="icon-socials"/>-->
-<!--          <img src="@/assets/TikTok.svg" alt="icon-socials" class="icon-socials"/>-->
-<!--        </div>-->
-
-<!--      </div>-->
-
-<!--      <hr class="new1">-->
-
-<!--      <div class="section-3">-->
-
-<!--        <div class="section-3-inner">-->
-<!--          <p class="text-3">Personal</p>-->
-<!--          <p class="text-4">Funds Transfer</p>-->
-<!--          <p class="text-4">Bills Payment</p>-->
-<!--          <p class="text-4">Chats & Messaging</p>-->
-<!--          <p class="text-4">Cards</p>-->
-<!--          <p class="text-4">Savings<span>Coming Soon</span></p>-->
-<!--        </div>-->
-
-<!--        <div class="section-3-inner">-->
-<!--          <p class="text-3">SMEs</p>-->
-<!--          <p class="text-4">Funds Transfer</p>-->
-<!--          <p class="text-4">Bills Payment</p>-->
-<!--          <p class="text-4">Chats & Messaging</p>-->
-<!--          <p class="text-4">Cards</p>-->
-<!--          <p class="text-4">Savings<span>Coming Soon</span></p>-->
-<!--        </div>-->
-
-<!--        <div class="section-3-inner">-->
-<!--          <p class="text-3">Business</p>-->
-<!--          <p class="text-4">Funds Transfer</p>-->
-<!--          <p class="text-4">Bills Payment</p>-->
-<!--          <p class="text-4">Chats & Messaging</p>-->
-<!--          <p class="text-4">Cards</p>-->
-<!--          <p class="text-4">Savings<span>Coming Soon</span></p>-->
-<!--        </div>-->
-
-<!--        <div class="section-3-inner">-->
-<!--          <p class="text-3">Company</p>-->
-<!--          <router-link to="/about"><p class="text-4">About Us</p></router-link>-->
-<!--          <p class="text-4">Contact</p>-->
-<!--          <p class="text-4">FAQs</p>-->
-<!--          <p class="text-4">Terms & Condition</p>-->
-<!--          <p class="text-4">Privacy Policy</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
 
   </div>
 </template>
@@ -116,16 +61,15 @@ export default {
 
 .text-1{
   font-size: 50px;
-  font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.01em;
   text-align: left;
   margin-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.015em;
   text-align: left;
@@ -139,64 +83,6 @@ export default {
   gap: 20px;
 }
 
-.btn-1{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 50px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  gap: 8px;
-  background-color: #191C1F;
-  width: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #FFFFFF;
-  margin-bottom: 86px;
-}
-
-.section-2{
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Red border */
-hr.new1 {
-  border-top: 1px solid #EEF0F1;
-  margin-top: 15px;
-}
-
-.reduce{
-  width: 80%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-.section-3{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 3%;
-}
-.text-3{
-  color: #191C1F;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px; /* 128.571% */
-  letter-spacing: 0.12px;
-}
-.text-4{
-  color: #697582;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 35px; /* 128.571% */
-  letter-spacing: 0.18px;
-}
 span{
   padding: 3px 15px;
   align-items: center;
@@ -215,27 +101,45 @@ span{
     font-size: 45px;
     line-height: 50px;
     margin-bottom: 8px;
+    text-align: center;
+    margin-top: 5%;
   }
 
   .text-2{
-    font-size: 16px;
+    font-size: 17px;
     line-height: 22px;
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .section-3{
-    /*display: block;*/
+  .section-1-alpha{
     display: flex;
-    flex-direction: column;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
   }
 
-  .section-3-inner{
-    margin-bottom: 10px;
+  .section-1{
+    width: 100%;
+    margin-left: unset;
   }
 
-  .text-3{
-    font-size: 15px;
+  .image-section{
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .play-store{
+    justify-content: center;
+    gap: 10px;
   }
 
 }

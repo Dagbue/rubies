@@ -100,6 +100,7 @@ export default {
   text-align: left;
   margin-bottom: 10px;
   color: #ffffff;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
@@ -119,7 +120,7 @@ export default {
   justify-content: center;
   height: 40px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 12px;
   gap: 8px;
   background-color: #F7F8F8;
   width: 170px;
@@ -135,7 +136,7 @@ export default {
   justify-content: center;
   height: 40px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 12px;
   gap: 8px;
   background-color: #191C1F;
   width: 170px;
@@ -197,13 +198,36 @@ hr.new1 {
     font-size: 45px;
     line-height: 50px;
     margin-bottom: 8px;
+    text-align: center;
   }
 
   .text-2{
     font-size: 16px;
     line-height: 22px;
+    text-align: center;
   }
 
+  .section-1-alpha{
+    display: block;
+  }
+
+  .section-1{
+    width: 100%;
+    margin-left: unset;
+  }
+
+  .image-section{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-alpha{
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
 
 }
 

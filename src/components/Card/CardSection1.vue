@@ -39,6 +39,7 @@ export default {
   margin-bottom: 10px;
   color: #FFFFFF;
   padding-top: 80px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .section-2{
@@ -47,6 +48,49 @@ export default {
   gap: 30px;
   margin-top: 5%;
   padding-bottom: 5%;
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .alpha{
+    height: 100%;
+    padding-bottom: 11%;
+  }
+  .section-2{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .image{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    width: 85%;
+  }
+
+
+  .section-1{
+    /*margin-top: 75px;*/
+    width: 100%;
+    margin-left: unset;
+  }
+
+  .text-1{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+
 }
 
 </style>

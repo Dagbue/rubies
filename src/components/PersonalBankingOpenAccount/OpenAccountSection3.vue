@@ -1,7 +1,7 @@
 <template>
   <div class="alpha">
     <div class="section-2">
-      <img src="@/assets/logo-inverse.svg" alt="" class="logo-inverse" />
+      <img src="@/assets/inverseFavicon.svg" alt="" class="logo-inverse" />
       <p class="text-1">Everything You Get <br/> with Rubies Account</p>
     </div>
 
@@ -50,7 +50,7 @@
           </div>
           <div class="section-3-inner">
             <img src="@/assets/asterisk.svg" alt="" class="section-3-inner-image" />
-            <p class="section-3-inner-text">Instant transaction notifications</p>
+            <p class="section-3-inner-text">Instant transactions</p>
           </div>
         </div>
 
@@ -98,9 +98,9 @@ export default {
   font-feature-settings: 'ss11' on, 'cv09' on, 'liga' off, 'calt' off;
   font-size: 56px;
   font-style: normal;
-  font-weight: 700;
   line-height: 64px; /* 114.286% */
   letter-spacing: -0.56px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 .logo-inverse{
   display: block;
@@ -134,7 +134,7 @@ export default {
 .seprate{
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   margin-bottom: 20px;
 }
 .line{
@@ -144,4 +144,44 @@ export default {
   margin-top: 3%;
   margin-bottom: 3%;
 }
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 700px) {
+  .seprate{
+    display: block;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .alpha{
+    height: 100%;
+    padding-bottom: 10%;
+  }
+
+  .section-3-inner{
+    padding: 10px  30px;
+    margin-bottom: 17px;
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+  }
+  .section-3-inner-image{
+    width: 6%;
+  }
+  .text-1{
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
+
+
 </style>

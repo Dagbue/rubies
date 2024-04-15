@@ -133,15 +133,6 @@ export default {
   position: relative;
 }
 .alpha2{
-   background-image: url('@/assets/smartphone2.svg');
-   background-color: #cccccc;
-   height: 100vh;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative;
- }
-.alpha2{
   background-image: url('@/assets/smartphone2.svg');
   background-color: #cccccc;
   height: 100vh;
@@ -170,6 +161,7 @@ export default {
   letter-spacing: -0.64px;
   padding-top: 60px;
   padding-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
@@ -231,5 +223,34 @@ export default {
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+
+  .section-3{
+    padding-bottom: 55px;
+  }
+}
+
+@media (max-width: 700px) {
+  .alpha{
+    height: 100%;
+  }
+  .alpha2{
+    height: 100%;
+  }
+  .alpha3{
+    height: 100%;
+  }
+  .text-1{
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+
 }
 </style>

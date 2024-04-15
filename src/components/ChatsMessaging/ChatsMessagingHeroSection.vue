@@ -70,6 +70,7 @@ export default {
   letter-spacing: -0.01em;
   text-align: left;
   margin-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
@@ -82,12 +83,6 @@ export default {
   margin-bottom: 15px;
 }
 
-
-.play-store{
-  display: flex;
-  gap: 20px;
-}
-
 .btn-1{
   display: flex;
   align-items: center;
@@ -95,7 +90,7 @@ export default {
   justify-content: center;
   height: 50px;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 12px;
   gap: 8px;
   background-color: #191C1F;
   width: 180px;
@@ -103,101 +98,51 @@ export default {
   margin-bottom: 86px;
 }
 
-.section-2{
-  display: flex;
-  justify-content: space-between;
-}
 
-/* Red border */
-hr.new1 {
-  border-top: 1px solid #EEF0F1;
-  margin-top: 15px;
-}
 
-.reduce{
-  width: 80%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-.section-3{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 3%;
-}
-.text-3{
-  color: #191C1F;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px; /* 128.571% */
-  letter-spacing: 0.12px;
-}
-.text-4{
-  color: #697582;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 35px; /* 128.571% */
-  letter-spacing: 0.18px;
-}
-span{
-  padding: 3px 15px;
-  align-items: center;
-  gap: 4px;
-  background-color: #EFFAF6;
-  color: #2D9F75;
-  border-radius: 100px;
-  margin-left: 5px;
-}
 @media (max-width: 990px) {
 }
 
 @media (max-width: 700px) {
+  .section-1-alpha{
+    display: block;
+  }
+  .section-1{
+    width: 100%;
+    margin-left: unset;
+  }
 
+  .image-section{
+    width: 100%;
+    margin-right: unset;
+  }
   .text-1{
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 44px;
+    line-height: 45px;
     margin-bottom: 8px;
+    text-align: center;
   }
 
   .text-2{
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
   }
 
-  .section-3{
-    /*display: block;*/
-    display: flex;
-    flex-direction: column;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
+  .btn-1{
+    height: 45px;
+    padding: 8px 16px;
+    gap: 6px;
+    width: 170px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
   }
-
-  .section-3-inner{
-    margin-bottom: 10px;
-  }
-
-  .text-3{
-    font-size: 15px;
-  }
-
 }
 
 @media (max-width: 500px) {
-  .text-1{
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 9px;
-  }
 
-  .text-2{
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 }
 </style>

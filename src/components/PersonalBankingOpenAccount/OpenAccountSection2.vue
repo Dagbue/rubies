@@ -78,6 +78,7 @@ export default {
   font-weight: 700;
   line-height: 64px; /* 114.286% */
   letter-spacing: -0.56px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 .color{
   color:  #DF1C41;
@@ -121,49 +122,7 @@ export default {
   background: #FEF3EB;
 }
 
-.section-4-content{
-  height: 377px;
-  width: 390px;
-  padding:  24px;
-  border-radius: 24px;
-  background:  #EBF1FF;
-}
-
-.section-5-content{
-  height: 377px;
-  width: 390px;
-  padding:  24px;
-  border-radius: 24px;
-  background:  #EBF1FF;
-}
-
-.section-1-content{
-  height: 377px;
-  width: 390px;
-  padding:  24px;
-  border-radius: 24px;
-  background:  #EBF1FF;
-}
-
-.section-1-content{
-  height: 377px;
-  width: 390px;
-  padding:  24px;
-  border-radius: 24px;
-  background:  #EBF1FF;
-}
-
-.section-1-content-text-1{
-  font-weight: 600;
-  color: #071333;
-  margin-top: 0;
-  font-size: 17px;
-  margin-bottom: 3%;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .section-1-content-text-2{
-  /*margin: 0;*/
   font-size: .9rem;
   color: #818a91;
   width: 95%;
@@ -183,28 +142,48 @@ export default {
 }
 
 .last-text{
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 @media (max-width: 1000px) {
+  .alpha{
+    height: 100%;
+    padding-bottom: 11%;
+  }
   .section-1-content-text-2{
     font-size: .750rem;
     width: 95%;
   }
 
-  .section-1-content-text-1{
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 700px) {
   .section-1{
     display: block;
-    margin: 2.5% 2% 2.5% 4%;
+    /*margin: 2.5% 2% 2.5% 4%;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
   }
 
   .section-1-content{
     margin-bottom: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-2-content{
+    margin-bottom: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-3-content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section-1-content-text-2{
@@ -212,10 +191,14 @@ export default {
     width: 95%;
   }
 
-  .section-1-content-text-1{
-    font-size: 18px;
+  .text-1{
+    font-size: 50px;
+    line-height: 55px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-
 
 }
 

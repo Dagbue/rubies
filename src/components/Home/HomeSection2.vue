@@ -111,24 +111,37 @@ export default {
   background:  #FFF;
 }
 
-@media (max-width: 990px) {
-  .image{
-    width: 100%;
-  }
-}
+
 
 @media (max-width: 700px) {
-
-
   .text-1{
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 45px;
     margin-bottom: 8px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .text-2{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
+    display: block;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-1{
+    height: 45px;
+    padding: 8px 16px;
+    gap: 6px;
+    width: 170px;
+    font-size: 14px;
+  }
+
+  .image{
+    width: 98%;
   }
 }
 
