@@ -4,7 +4,7 @@
     <div class="section-alpha">
 
       <div class="section-2">
-        <img src="@/assets/padlocks.svg" alt="" class="image" />
+        <img src="@/assets/padlocks.webp" alt="" class="image" />
       </div>
 
       <div class="section-1">
@@ -92,14 +92,16 @@ export default {
   margin-bottom: 86px;
 }
 .image{
-  margin-top: 100px;
-  margin-bottom: 43px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media (max-width: 990px) {
-  .image{
-    width: 100%;
-  }
+
 }
 
 @media (max-width: 700px) {
@@ -129,9 +131,7 @@ export default {
     font-size: 14px;
   }
 
-  .image{
-    width: 100%;
-  }
+
 }
 
 @media (max-width: 500px) {

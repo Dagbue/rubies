@@ -14,7 +14,7 @@
       </div>
 
       <div class="section-2">
-        <img src="@/assets/Group 140.png" alt="" class="image" />
+        <img src="@/assets/Group 140.webp" alt="" class="image" />
       </div>
 
     </div>

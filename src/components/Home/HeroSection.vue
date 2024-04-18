@@ -4,8 +4,8 @@
     <div class="section-alpha">
 
       <div class="section-1">
-        <p class="text-1">Experience the future of <br/> chat and finance</p>
-        <p class="text-2">Rubies is the all-in-one chat and financial transactions app that allows <br/> you to connect with friends and
+        <p class="text-1">Experience the future of chat & finance</p>
+        <p class="text-2">Rubies is the all-in-one chat and financial transactions app that allows you to connect with friends and
           family while managing your finances securely.</p>
         <div class="btn-1">
           Get Started
@@ -14,8 +14,8 @@
       </div>
 
       <div class="section-2">
-        <img src="@/assets/HeroImage.png" alt="" class="image" />
-        <img src="@/assets/HeroMobile.png" alt="" class="image-2" />
+        <img src="@/assets/HeroImage.webp" alt="" class="image" />
+        <img src="@/assets/HeroMobile.webp" alt="" class="image-2" />
       </div>
 
 
@@ -54,6 +54,10 @@ export default {
   letter-spacing: -0.01em;
   text-align: center;
   margin-bottom: 8px;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-2{
@@ -63,6 +67,10 @@ export default {
   text-align: center;
   color: #697582;
   margin-bottom: 24px;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-1{
@@ -130,6 +138,10 @@ export default {
     font-size: 35px;
     line-height: 40px;
     margin-bottom: 9px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .image-2{
@@ -148,9 +160,11 @@ export default {
 
 
   .text-2{
-    width: 85%;
+    width: 90%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+
   }
 }
 </style>

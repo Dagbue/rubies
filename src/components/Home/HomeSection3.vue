@@ -4,14 +4,13 @@
     <div class="section-alpha">
 
       <div class="section-2">
-        <img src="@/assets/video-card-image.svg" alt="" class="image" />
-<!--        <video  loop autoplay playsinline class="responsive-video" :src="videoSource" />-->
+        <img src="@/assets/video-card-image.webp" alt="" class="image" />
       </div>
 
       <div class="section-1">
-        <p class="text-1">Simplify Spending,<br/>Elevate Life</p>
-        <p class="text-2">Make everyday transactions hassle-free with the Rubies debit <br/>card. Get your card easily
-          and enjoy fee-free maintenance, <br/> ensuring a seamless financial experience.</p>
+        <p class="text-1">Simplify Spending, Elevate Life</p>
+        <p class="text-2">Make everyday transactions hassle-free with the Rubies debit card. Get your card easily
+          and enjoy fee-free maintenance, ensuring a seamless financial experience.</p>
         <div class="btn-1">
           Get your Card
         </div>
@@ -25,11 +24,6 @@
 <script>
 export default {
   name: "HomeSection3",
-  data() {
-    return {
-      videoSource: require('@/assets/-2b5d-4d9a-84f8-900662da562f.mp4'), // adjust the path based on your project structure
-    };
-  },
 }
 </script>
 
@@ -71,6 +65,11 @@ video.responsive-video {
   text-align: center;
   margin-bottom: 20px;
   font-family: 'BR-Firma-Bold', sans-serif;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .text-2{
@@ -81,6 +80,10 @@ video.responsive-video {
   text-align: center;
   color: #697582;
   margin-bottom: 20px;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-1{
@@ -101,6 +104,10 @@ video.responsive-video {
 }
 .image{
   margin-top: 112px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 990px) {
   .image{
@@ -130,12 +137,21 @@ video.responsive-video {
     font-size: 35px;
     line-height: 40px;
     margin-bottom: 9px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .text-2{
-    width: 85%;
+    width: 90%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .section-1{
+    margin-bottom: 60px;
   }
 }
 </style>

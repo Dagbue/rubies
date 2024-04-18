@@ -10,8 +10,8 @@
         <!--          Get Started-->
         <!--        </div>-->
         <div class="play-store">
-          <img src="@/assets/applestore.svg" alt="" class="store-image" />
-          <img src="@/assets/gogleplay.svg" alt="" class="store-image" />
+          <img src="@/assets/applestore.webp" alt="" class="store-image" />
+          <img src="@/assets/gogleplay.webp" alt="" class="store-image" />
         </div>
       </div>
 
@@ -83,14 +83,8 @@ export default {
   gap: 20px;
 }
 
-span{
-  padding: 3px 15px;
-  align-items: center;
-  gap: 4px;
-  background-color: #EFFAF6;
-  color: #2D9F75;
-  border-radius: 100px;
-  margin-left: 5px;
+.store-image{
+  width: 30%;
 }
 @media (max-width: 990px) {
 }
@@ -140,6 +134,11 @@ span{
   .play-store{
     justify-content: center;
     gap: 10px;
+  }
+
+  .store-image{
+    width: 40%;
+    margin-top: 5px;
   }
 
 }
