@@ -4,8 +4,8 @@
     <div class="section-2">
       <p class="text-1">Join Rubies and<br>experience greatness</p>
 
-      <p class="text-2">Embrace the power of unified communication and financial management<br>
-        with Rubies. Chat, send money, pay bills, and more—all within one<br>innovative app for ultimate convenience and control.</p>
+      <p class="text-2">Embrace the power of unified communication and financial management
+        with Rubies. Chat, send money, pay bills, and more—all within one innovative app for ultimate convenience and control.</p>
     </div>
 
 <!--    <div class="btn-alpha">-->
@@ -75,6 +75,10 @@ export default {
   font-weight: 400;
   line-height: 26px; /* 133.333% */
   letter-spacing: -0.27px;
+  width: 75%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -143,6 +147,31 @@ export default {
 }
 
 @media (max-width: 500px) {
+
+  .text-1{
+    font-size: 50px;
+    line-height: 50px; /* 100% */
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5.1%;
+  }
+
+  .text-2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px; /* 133.333% */
+    letter-spacing: -0.27px;
+    width: 75%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .alpha{
+    margin-bottom: 12%;
+  }
 
 }
 </style>

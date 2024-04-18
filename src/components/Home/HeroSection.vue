@@ -9,12 +9,13 @@
           family while managing your finances securely.</p>
         <div class="btn-1">
           Get Started
-          <img src="@/assets/arrow-right-line.svg" alt="" class="" />
+          <img src="@/assets/arrow-right-line.svg" alt="" class="arrow-image" />
         </div>
       </div>
 
       <div class="section-2">
         <img src="@/assets/HeroImage.png" alt="" class="image" />
+        <img src="@/assets/HeroMobile.png" alt="" class="image-2" />
       </div>
 
 
@@ -85,6 +86,10 @@ export default {
   width: 100%;
 }
 
+.image-2{
+  display: none;
+}
+
 @media (max-width: 990px) {
 
 }
@@ -110,7 +115,6 @@ export default {
 
   .btn-1{
     height: 45px;
-    padding: 8px 16px;
     gap: 6px;
     width: 170px;
     font-size: 14px;
@@ -128,6 +132,19 @@ export default {
     margin-bottom: 9px;
   }
 
+  .image-2{
+    width: 100%;
+    display: unset;
+  }
+
+  .image{
+    display: none;
+  }
+
+
+  .arrow-image{
+    width: 14%;
+  }
 
 
   .text-2{

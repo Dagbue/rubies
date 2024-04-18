@@ -3,8 +3,8 @@
     <div class="section-1-alpha">
       <div class="section-1">
         <p class="text-1">Small Business,<br/>Big Solutions</p>
-        <p class="text-2">Our SME banking services are designed to cater to the unique <br/>
-          needs of small and medium enterprises, offering a range of <br/> financial solutions to help your business
+        <p class="text-2">Our SME banking services are designed to cater to the unique
+          needs of small and medium enterprises, offering a range of financial solutions to help your business
           thrive and grow.</p>
         <!--        <p class="text-2">Download the Rubies app</p>-->
         <div class="btn-sep">
@@ -78,6 +78,7 @@ export default {
   text-align: left;
   margin-bottom: 10px;
   color: #FFFFFF;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 
 .text-2{
@@ -173,7 +174,17 @@ export default {
 }
 
 @media (max-width: 500px) {
+  .text-1{
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 9px;
+  }
 
 
+  .text-2{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

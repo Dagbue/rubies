@@ -88,7 +88,10 @@ export default {
 }
 
 @media (max-width: 500px) {
-
+  .text-1{
+    font-size: 48px;
+    line-height: 55px;
+  }
 
 }
 

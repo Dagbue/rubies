@@ -18,65 +18,55 @@ const routes = [
   {
     path: '/personalBankingOpenAccount',
     name: 'personalBankingOpenAccount',
-    component: () => import(/* webpackChunkName: "about" */ '../views/PersonalBankingOpenAccountView.vue')
+    component: () => import(/* webpackChunkName: "personalBankingOpenAccount" */ '../views/PersonalBankingOpenAccountView.vue')
   },
   {
     path: '/personalBankingPayments',
     name: 'personalBankingPayments',
-    component: () => import(/* webpackChunkName: "about" */ '../views/PersonalBankingPaymentsView.vue')
+    component: () => import(/* webpackChunkName: "personalBankingPayments" */ '../views/PersonalBankingPaymentsView.vue')
   },
   {
     path: '/chatsMessagingView',
     name: 'chatsMessagingView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ChatsMessagingView.vue')
+    component: () => import(/* webpackChunkName: "chatsMessagingView" */ '../views/ChatsMessagingView.vue')
   },
   {
     path: '/cardView',
     name: 'cardView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/CardView.vue')
+    component: () => import(/* webpackChunkName: "cardView" */ '../views/CardView.vue')
   },
   {
     path: '/businessBanking',
     name: 'businessBanking',
-    component: () => import(/* webpackChunkName: "about" */ '../views/BusinessBankingView.vue')
+    component: () => import(/* webpackChunkName: "businessBanking" */ '../views/BusinessBankingView.vue')
   },
   {
     path: '/smeView',
     name: 'smeView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/SmeView.vue')
+    component: () => import(/* webpackChunkName: "smeView" */ '../views/SmeView.vue')
   },
   {
     path: '/contactView',
     name: 'contactView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ContactView.vue')
+    component: () => import(/* webpackChunkName: "contactView" */ '../views/ContactView.vue')
   },
   {
     path: '/faqView',
     name: 'faqView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/FaqView.vue')
+    component: () => import(/* webpackChunkName: "faqView" */ '../views/FaqView.vue')
   },
   {
     path: '/termsView',
     name: 'termsView',
-    component: () => import(/* webpackChunkName: "about" */ '../views/TermsView.vue')
+    component: () => import(/* webpackChunkName: "faqView" */ '../views/TermsView.vue')
+  },
+  {
+    path: '/privacyPolicyView',
+    name: 'privacyPolicyView',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PrivacyPolicyView.vue')
   },
 ]
 
-// const routes = [
-//   {
-//     path: '/',
-//     name: 'home',
-//     component: HomeView
-//   },
-//   {
-//     path: '/about',
-//     name: 'about',
-//     // route level code-splitting
-//     // this generates a separate chunk (about.[hash].js) for this route
-//     // which is lazy-loaded when the route is visited.
-//     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-//   }
-// ]
 
 const router = new VueRouter({
   mode: 'history',

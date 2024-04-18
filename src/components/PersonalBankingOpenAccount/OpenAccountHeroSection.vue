@@ -4,8 +4,8 @@
       <div class="section-1">
         <p class="text-1">Instant Access, <br/> Endless Benefits</p>
 
-        <p class="text-2">Our streamlined process ensures that you can set up your account in <br/> minutes,
-          with just a few clicks, making banking hassle-free and <br/> accessible to all.</p>
+        <p class="text-2">Our streamlined process ensures that you can set up your account in minutes,
+          with just a few clicks, making banking hassle-free and  accessible to all.</p>
 
 <!--        <p class="text-2">Download the Rubies app</p>-->
                 <div class="btn-1">
@@ -198,7 +198,17 @@ span{
 }
 
 @media (max-width: 500px) {
+  .text-1{
+    font-size: 43px;
+    line-height: 44px;
+    margin-bottom: 9px;
+  }
 
 
+  .text-2{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

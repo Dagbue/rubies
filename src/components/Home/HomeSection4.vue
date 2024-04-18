@@ -147,5 +147,15 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .alpha{
+    background-image: url("@/assets/securitybgd.svg");
+    background-color: #000;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 }
 </style>

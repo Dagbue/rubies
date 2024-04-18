@@ -2,7 +2,7 @@
   <div class="alpha">
 
     <div class="section-1">
-      <p class="text-1">Where Finance and <br/> Friendship Flourish Together</p>
+      <p class="text-1">Where Finance and Friendship Flourish Together</p>
     </div>
 
     <div class="section-2">
@@ -89,8 +89,14 @@ export default {
 }
 
 @media (max-width: 500px) {
-
-
+  .text-1{
+    font-size: 55px;
+    line-height: 60px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 </style>

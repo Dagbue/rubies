@@ -4,8 +4,8 @@
     <div class="section-2">
       <p class="text-1">Empower <br> Your Business Today!.</p>
 
-      <p class="text-2">Join our platform and unlock a world of tailored business banking services designed to <br>
-        help your enterprise thrive. Register now to access a suite of financial tools and resources <br> tailored to meet your business needs.</p>
+      <p class="text-2">Join our platform and unlock a world of tailored business banking services designed to
+        help your enterprise thrive. Register now to access a suite of financial tools and resources  tailored to meet your business needs.</p>
     </div>
 
     <div class="btn-alpha">
@@ -115,7 +115,7 @@ export default {
 
 @media (max-width: 700px) {
   .alpha{
-    height: 90vh;
+    height: 85vh;
   }
 
   .text-1{
@@ -140,6 +140,13 @@ export default {
 }
 
 @media (max-width: 500px) {
+
+  .text-2{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 </style>

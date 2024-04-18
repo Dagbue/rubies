@@ -180,7 +180,10 @@ export default {
 }
 
 @media (max-width: 500px) {
-
+  .text-1{
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 

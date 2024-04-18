@@ -2,27 +2,29 @@
   <div class="alpha">
 
     <div class="section-2">
-      <p class="text-1">We’d love to hear  from you.</p>
+      <p class="text-1">Privacy Policy</p>
 
-      <p class="text-2">Our friendly team is always here to chat.</p>
+      <p class="text-2">By accessing our website, you are agreeing to be bound by these terms of service, all
+        applicable laws and regulations, and agree that you are responsible for compliance with any applicable
+        local laws.</p>
     </div>
 
-<!--    <div class="btn-alpha">-->
-<!--      <div class="btn-1">-->
-<!--        Join Now-->
-<!--        <img src="@/assets/arrow-right-line-dark.svg" alt="" class="" />-->
-<!--      </div>-->
-<!--      <div class="btn-2">-->
-<!--        Contact Sales-->
-<!--      </div>-->
-<!--    </div>-->
+    <!--    <div class="btn-alpha">-->
+    <!--      <div class="btn-1">-->
+    <!--        Join Now-->
+    <!--        <img src="@/assets/arrow-right-line-dark.svg" alt="" class="" />-->
+    <!--      </div>-->
+    <!--      <div class="btn-2">-->
+    <!--        Contact Sales-->
+    <!--      </div>-->
+    <!--    </div>-->
 
   </div>
 </template>
 
 <script>
 export default {
-  name: "ContactUsHeader",
+  name: "PrivacyPolicyHeader",
   data() {
     return {
       backgroundImage: require('@/assets/Vector.svg'), // Assuming the image is in the assets folder
@@ -30,6 +32,7 @@ export default {
   },
 }
 </script>
+
 
 <style scoped>
 .alpha{
@@ -68,46 +71,12 @@ export default {
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.27px;
   padding-top: 5px;
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-
-.btn-1{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 50px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  gap: 8px;
-  background-color: #F7F8F8;
-  width: 170px;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-  color: #191C1F;
-}
-
-.btn-2{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 50px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  gap: 8px;
-  background-color: #191C1F;
-  width: 170px;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-  color: #FFFFFF;
-}
-.btn-alpha{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 25px;
-}
 
 
 @media (max-width: 990px) {

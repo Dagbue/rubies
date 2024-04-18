@@ -1,7 +1,21 @@
 <template>
   <div v-if="!$route.meta.hideNavigation" >
 
-    <div class="separate">
+    <div v-bind:class="{
+      separate: isHomeRoute,
+      separate8: isAboutRoute,
+      separate2: isPersonalBankingOpenAccount,
+      separate3: isPersonalBankingPayments,
+      separate4: isChatsMessagingView,
+      separate5: isCardView,
+      separate10: isBusinessBanking,
+      separate11: isContactView,
+      separate9: isFaqView,
+      separate6: isTermsView,
+      separate7: isSmeView,
+      separate12: isPrivacyPolicyView,
+    }">
+
 
       <div>
         <div v-if="$route.name === 'personalBankingOpenAccount'" class="style-4-1">
@@ -66,7 +80,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover" to="">
+                  <router-link class="hover" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -146,7 +160,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-2" to="">
+                  <router-link class="hover-2" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -229,7 +243,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-3" to="">
+                  <router-link class="hover-3" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -310,7 +324,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-4" to="">
+                  <router-link class="hover-4" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -389,7 +403,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-5" to="">
+                  <router-link class="hover-5" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -469,7 +483,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-6" to="">
+                  <router-link class="hover-6" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -548,7 +562,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-5" to="">
+                  <router-link class="hover-5" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -628,7 +642,7 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-5" to="">
+                  <router-link class="hover-5" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -708,7 +722,86 @@
                     <p class="text-1">Terms & Condition</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover-5" to="">
+                  <router-link class="hover-5" to="/privacyPolicyView">
+                    <p class="text-1">Privacy Policy</p>
+                    <!--                    <p class="text-2">Access worldwide banking services</p>-->
+                  </router-link>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+
+          <div v-show="!mobile" class="button-part">
+            <p style="color: #ffffff" class="auth">Download Now</p>
+            <!--            <p class="auth">Log In</p>-->
+            <!--            <p class="auth2">Sign Up</p>-->
+          </div>
+
+        </div>
+
+        <div v-else-if="$route.name === 'privacyPolicyView'" class="style-4-5">
+
+          <img alt="company logo" src="@/assets/logo-inverse.svg" class="logo" @click="home" />
+
+          <ul v-show="!mobile" class="menu-4" >
+
+            <li class="link">
+              <div style="color: #ffffff" class="dropdown-navigation" @click="toggleDropdown">
+                Personal
+                <!--              <i class='bx bxs-chevron-down'></i>-->
+                <div v-if="showDropdown" class="dropdown-content-5">
+                  <router-link class="hover-5" to="/personalBankingOpenAccount">
+                    <p class="text-1 sme-hover">Account Opening</p>
+                    <p class="text-2 sme-hover">Access worldwide banking services</p>
+                  </router-link>
+                  <router-link class="hover-5"  to="/personalBankingPayments">
+                    <p class="text-1 sme-hover">Payments</p>
+                    <p class="text-2 sme-hover">Access worldwide banking services</p>
+                  </router-link>
+                  <router-link class="hover-5" to="/chatsMessagingView">
+                    <p class="text-1 sme-hover">Chats & Messaging</p>
+                    <p class="text-2 sme-hover">Access worldwide banking services</p>
+                  </router-link>
+                  <router-link class="hover-5" to="/cardView">
+                    <p class="text-1 sme-hover">Cards</p>
+                    <p class="text-2 sme-hover">Access worldwide banking services</p>
+                  </router-link>
+                </div>
+              </div>
+            </li>
+            <li class="link">
+              <div class="dropdown-navigation">
+                <router-link style="color: #ffffff"  to="/businessBanking">Business</router-link>
+              </div>
+            </li>
+            <li class="link">
+              <div class="dropdown-navigation">
+                <router-link style="color: #ffffff" to="/smeView">SMEs</router-link>
+              </div>
+            </li>
+            <li class="link">
+              <div style="color: #ffffff" class="dropdown-navigation" @click="toggleDropdown">
+                Company
+                <div v-if="showDropdown" class="dropdown-content-5">
+                  <router-link class="hover-5" to="/about">
+                    <p class="text-1">About Us</p>
+                    <!--                    <p class="text-2">Access worldwide banking services</p>-->
+                  </router-link>
+                  <router-link class="hover-5"  to="/contactView">
+                    <p class="text-1">Contact</p>
+                    <!--                    <p class="text-2">Access worldwide banking services</p>-->
+                  </router-link>
+                  <router-link class="hover-5" to="/faqView">
+                    <p class="text-1">FAQs</p>
+                    <!--                    <p class="text-2">Access worldwide banking services</p>-->
+                  </router-link>
+                  <router-link class="hover-5" to="/termsView">
+                    <p class="text-1">Terms & Condition</p>
+                    <!--                    <p class="text-2">Access worldwide banking services</p>-->
+                  </router-link>
+                  <router-link class="hover-5" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -789,7 +882,7 @@
                     <p class="text-1">Terms & Condition</p>
 <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
-                  <router-link class="hover" to="">
+                  <router-link class="hover" to="/privacyPolicyView">
                     <p class="text-1">Privacy Policy</p>
                     <!--                    <p class="text-2">Access worldwide banking services</p>-->
                   </router-link>
@@ -810,157 +903,224 @@
       </div>
 
       <div class="mobile" v-show="mobile">
-        <div>
-          <ul class="dropdown-nav" v-show="mobileNav">
-            <img alt="company logo" src="@/assets/Logo.svg" class="logo2" />
+          <div>
+            <ul class="dropdown-nav" v-show="mobileNav">
 
-            <label class="accordion-wrapper">
-              <input type="checkbox" class="accordion" hidden />
-              <div class="title">
-                <div class="title-content">
-                  <p class="title-content-para">Personal</p>
+
+              <img alt="company logo" src="@/assets/Logo.svg" class="logo2" @click="homeMobile" />
+
+
+              <label class="accordion-wrapper">
+                <input type="checkbox" class="accordion" hidden />
+                <div class="title">
+                  <div class="title-content">
+                    <p class="title-content-para">Personal</p>
+                  </div>
+                  <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#191C1F">
+                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                  </svg>
+                  <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#191C1F">
+                    <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                  </svg>
                 </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link  to="/personalBankingOpenAccount" >
+                      <p class="text-1" @click="toggleMobileNav2">Account Opening</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link   to="/personalBankingPayments">
+                      <p class="text-1" @click="toggleMobileNav2">Payments</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link  to="/chatsMessagingView">
+                      <p class="text-1" @click="toggleMobileNav2">Chats & Messaging</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link  to="/cardView" >
+                      <p class="text-1" @click="toggleMobileNav2">Cards</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+              </label>
+
+              <label class="accordion-wrapper">
+                <input type="checkbox" class="accordion" hidden />
+                <div class="title">
+                  <div class="title-content">
+                    <router-link to="/businessBanking">
+                      <p class="title-content-para" @click="toggleMobileNav2">Business</p>
+                    </router-link>
+                  </div>
+                  <!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
+                  <!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
+                  <!--                </svg>-->
+                  <!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
+                  <!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
+                  <!--                </svg>-->
+                </div>
+
+                <!--              <div class="content" >-->
+                <!--                <div class="title-content content-2">-->
+                <!--                  <router-link to="/personalLoans"><p @click="toggleMobileNav2" class="title-content-para">Personal Loans</p></router-link>-->
+                <!--                </div>-->
+                <!--              </div>-->
+
+                <!--              <div class="content" >-->
+                <!--                <div class="title-content content-2">-->
+                <!--                  <router-link to="/mortgagesView"><p @click="toggleMobileNav2" class="title-content-para">Mortgages</p></router-link>-->
+                <!--                </div>-->
+                <!--              </div>-->
+
+                <!--              <div class="content" >-->
+                <!--                <div class="title-content content-2">-->
+                <!--                  <router-link to="/studentLoan"><p @click="toggleMobileNav2" class="title-content-para">Student Loan</p></router-link>-->
+                <!--                </div>-->
+                <!--              </div>-->
+
+
+              </label>
+
+              <label class="accordion-wrapper">
+                <input type="checkbox" class="accordion" hidden />
+                <div class="title">
+                  <div class="title-content">
+                    <router-link to="/smeView">
+                      <p class="title-content-para" @click="toggleMobileNav2">SMEs</p>
+                    </router-link>
+                  </div>
+                  <!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
+                  <!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
+                  <!--                </svg>-->
+                  <!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
+                  <!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
+                  <!--                </svg>-->
+                </div>
+
+                <!--              <div class="content" >-->
+                <!--                <div class="title-content content-2">-->
+                <!--                  <router-link to="/personalLoans"><p @click="toggleMobileNav2" class="title-content-para">Personal Loans</p></router-link>-->
+                <!--                </div>-->
+                <!--              </div>-->
+
+                <!--              <div class="content" >-->
+                <!--                <div class="title-content content-2">-->
+                <!--                  <router-link to="/mortgagesView"><p @click="toggleMobileNav2" class="title-content-para">Mortgages</p></router-link>-->
+                <!--                </div>-->
+                <!--              </div>-->
+
+                <!--              <div class="content" >-->
+                <!--                <div class="title-content content-2">-->
+                <!--                  <router-link to="/studentLoan"><p @click="toggleMobileNav2" class="title-content-para">Student Loan</p></router-link>-->
+                <!--                </div>-->
+                <!--              </div>-->
+
+
+              </label>
+
+              <label class="accordion-wrapper">
+                <input type="checkbox" class="accordion" hidden />
+                <div class="title">
+                  <div class="title-content">
+                    <p class="title-content-para">Company</p>
+                  </div>
+                  <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#191C1F">
+                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                  </svg>
+                  <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#191C1F">
+                    <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                  </svg>
+                </div>
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link  to="/about" >
+                      <p class="text-1" @click="toggleMobileNav2">About Us</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link   to="/contactView">
+                      <p class="text-1" @click="toggleMobileNav2">Contact</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link  to="/faqView">
+                      <p class="text-1" @click="toggleMobileNav2">FAQs</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link  to="/termsView" >
+                      <p class="text-1" @click="toggleMobileNav2">Terms & Condition</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+                <div class="content" >
+                  <div class="title-content content-2">
+                    <router-link  to="/privacyPolicyView" >
+                      <p class="text-1" @click="toggleMobileNav2">Privacy Policy</p>
+                      <!--                    <p style="font-size: 12px;" class="text-2">Access worldwide banking services</p>-->
+                    </router-link>
+                  </div>
+                </div>
+
+              </label>
+
+
+              <br/>
+              <div class="button-part">
+                <p class="auth2">Download Now</p>
               </div>
 
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--               <router-link to="/checking"><p @click="toggleMobileNav2" class="title-content-para">Checking</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
 
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/saving"><p @click="toggleMobileNav2" class="title-content-para">Saving</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
+              <!--            <li class="link"><router-link  to="/loginWithEmail" class="auth-2">Login</router-link></li>-->
 
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/iraview"><p @click="toggleMobileNav2" class="title-content-para">IRA Account</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
+            </ul>
 
-
-            </label>
-
-            <label class="accordion-wrapper">
-              <input type="checkbox" class="accordion" hidden />
-              <div class="title">
-                <div class="title-content">
-                  <p class="title-content-para">Business</p>
-                </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
-              </div>
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/personalLoans"><p @click="toggleMobileNav2" class="title-content-para">Personal Loans</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/mortgagesView"><p @click="toggleMobileNav2" class="title-content-para">Mortgages</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/studentLoan"><p @click="toggleMobileNav2" class="title-content-para">Student Loan</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-
-            </label>
-
-            <label class="accordion-wrapper">
-              <input type="checkbox" class="accordion" hidden />
-              <div class="title">
-                <div class="title-content">
-                  <p class="title-content-para">SMEs</p>
-                </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
-              </div>
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/wealthManagementView"><p @click="toggleMobileNav2" class="title-content-para">Wealth Management</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/individualRetirementView"><p @click="toggleMobileNav2" class="title-content-para">Individual Retirement</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-            </label>
-
-            <label class="accordion-wrapper">
-              <input type="checkbox" class="accordion" hidden />
-              <div class="title">
-                <div class="title-content">
-                  <p class="title-content-para">Company</p>
-                </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
-              </div>
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/guidesView"><p @click="toggleMobileNav2" class="title-content-para">Guides</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/resourcesView"><p @click="toggleMobileNav2" class="title-content-para">Resources</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/faqView"><p @click="toggleMobileNav2" class="title-content-para">FAQ's</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-            </label>
-
-
-              <p class="mobile-auth">Log In</p>
-            <br/>
-              <p class="mobile-auth">Sign Up</p>
-
-
-<!--            <li class="link"><router-link  to="/loginWithEmail" class="auth-2">Login</router-link></li>-->
-
-          </ul>
-
+          </div>
+          <div class="icon">
+            <i v-if="$route.name === 'businessBanking'"  @click="toggleMobileNav" class='bx bx-menu light' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
+            <i  v-else-if="$route.name === 'smeView'"  @click="toggleMobileNav" class='bx bx-menu light' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
+            <i  v-else-if="$route.name === 'contactView'"  @click="toggleMobileNav" class='bx bx-menu light' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
+            <i  v-else-if="$route.name === 'faqView'"  @click="toggleMobileNav" class='bx bx-menu light' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
+            <i  v-else-if="$route.name === 'termsView'"  @click="toggleMobileNav" class='bx bx-menu light' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
+            <i  v-else-if="$route.name === 'privacyPolicyView'"  @click="toggleMobileNav" class='bx bx-menu light' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
+            <i v-else @click="toggleMobileNav" class='bx bx-menu' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
+          </div>
         </div>
-        <div class="icon">
-          <i @click="toggleMobileNav" class='bx bx-menu' v-show="mobile" :class="{'icon-active' : mobileNav}"></i>
-        </div>
-      </div>
 
     </div>
 
@@ -979,11 +1139,53 @@ export default {
       showDropdown: false,
     }
   },
+  computed: {
+    isHomeRoute() {
+      return this.$route.name === 'home';
+    },
+    isAboutRoute() {
+      return this.$route.name === 'about';
+    },
+    isPersonalBankingOpenAccount() {
+      return this.$route.name === 'personalBankingOpenAccount';
+    },
+    isPersonalBankingPayments() {
+      return this.$route.name === 'personalBankingPayments';
+    },
+    isChatsMessagingView() {
+      return this.$route.name === 'chatsMessagingView';
+    },
+    isCardView() {
+      return this.$route.name === 'cardView';
+    },
+    isBusinessBanking() {
+      return this.$route.name === 'businessBanking';
+    },
+    isSmeView() {
+      return this.$route.name === 'smeView';
+    },
+    isContactView() {
+      return this.$route.name === 'contactView';
+    },
+    isFaqView() {
+      return this.$route.name === 'faqView';
+    },
+    isTermsView() {
+      return this.$route.name === 'termsView';
+    },
+    isPrivacyPolicyView() {
+      return this.$route.name === 'privacyPolicyView';
+    },
+  },
   created() {
     window.addEventListener('resize', this.checkScreen);
     this.checkScreen();
   },
   methods: {
+    homeMobile(){
+      this.home();
+      this.toggleMobileNav2();
+    },
     home(){
       this.$router.push("/");
       window.scrollTo(0, 0);
@@ -1012,16 +1214,14 @@ export default {
 </script>
 
 <style scoped>
-.bx-bell{
-  color: #191C1F;
-  font-size: 30px;
-}
-
 .bx-menu{
   font-size: 30px;
   cursor: pointer;
   transition: .8s ease all;
   color: #191C1F;
+}
+.light{
+  color: #FFFFFF;
 }
 .icon-active{
   transform: rotate(180deg);
@@ -1195,110 +1395,13 @@ export default {
   text-align: center;
   font-size: 14px;
 }
-/*.auth2:hover{*/
-/*  background-color: transparent;*/
-/*  border: 1px solid #191C1F;*/
-/*  color: #191C1F;*/
+
+
+
+/*i{*/
+/*  padding-right: 4px;*/
+/*  font-size: 14px;*/
 /*}*/
-
-.auth3{
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-  color: #191C1F;
-  padding: 0.4em 30px 0.5em 30px;
-  border-radius: 12px;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.25s ease;
-  margin: 0 2.5px;
-  width: 120px;
-  text-align: center;
-  font-size: 14px;
-}
-
-/*.auth3:hover{*/
-/*  border: 1px solid #191C1F*/
-/*}*/
-
-
-.link-2 {
-  padding: 0.3em 0;
-  color:  #191C1F;
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-
-.topmost-header {
-  /*background-color: #143159;*/
-  padding-top: 10px;
-  padding-bottom: 10.5px;
-  color: #FFFFFF;
-  /*display: flex;*/
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background-color: #191C1F;
-}
-
-.topmost-header-1 {
-  display: flex;
-  justify-content: right;
-}
-
-.topmost-header-text {
-  font-size: 15px;
-  padding-right: 28px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  font-weight: 900;
-}
-.topmost-header-text:hover {
-  text-decoration: underline;
-}
-
-
-
-.topmost-header-2 {
-  text-align: center;
-  /*background-color: #143159;*/
-  padding-top: 10px;
-  padding-bottom: 10.5px;
-  color: #ffffff;
-  /*display: flex;*/
-  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);*/
-  background-color: #3a3a3a;
-}
-
-.topmost-header-1-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.topmost-header-text-2 {
-  font-size: 15px;
-  padding-left: 28px;
-  font-weight: 900;
-}
-.topmost-header-text-3 {
-  text-decoration: underline;
-  padding-left: 5px;
-}
-
-
-i{
-  padding-right: 4px;
-  font-size: 14px;
-}
 
 .dropdown-nav{
   display: flex;
@@ -1373,10 +1476,6 @@ i{
   white-space: nowrap;
 }
 
-/*.dropdown-nav li:hover a,*/
-/*.dropdown-nav.current a {*/
-/*  color: #D23535;*/
-/*}*/
 
 hr {
   color: white;
@@ -1386,39 +1485,6 @@ hr {
   margin-top: 95px;
 }
 
-
-.fg--search {
-  background: white;
-  position: relative;
-  width: 210px;
-}
-.fg--search input {
-  width: 100%;
-  padding: 9px;
-  display: block;
-  background: #FFFFFF;
-  border: 1px solid #E9F0FFFF;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 7px;
-}
-
-.fg--search button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 12px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  margin-top: 3.5px;
-}
-
-.fa-search{
-  color: #667085;
-  /*margin-right: 10px;*/
-}
 
 
 
@@ -1628,15 +1694,8 @@ a {
   display: flex;
   align-content: center;
   align-items: center;
-  /*justify-content: space-between;*/
   padding: 10px 20px;
-  /*background: #1565C0;*/
-  /*border: 1px solid #EAECF0;*/
-  /*padding-top: 10px;*/
-  /*padding-left: 7.5px;*/
-  /*padding-bottom: 9px;*/
   border-radius: 5px;
-  /*background-color: #FFFFFF;*/
 }
 
 .accordion ~ .title strong {
@@ -1645,7 +1704,6 @@ a {
 
 .accordion ~ .title .side-icon {
   display: block;
-  padding-top: 3px;
 }
 
 .accordion:checked ~ .title .side-icon {
@@ -1654,7 +1712,6 @@ a {
 
 .accordion ~ .title .down-icon {
   display: none;
-  padding-top: 3px;
 }
 
 .accordion:checked ~ .title .down-icon {
@@ -1691,10 +1748,7 @@ a {
   align-items: center;
 }
 
-.bxs-dashboard{
-  color: #01675b;
-  font-size: 20px;
-}
+
 
 .title-content-para{
   padding-left: 5px;
@@ -1714,9 +1768,6 @@ a {
   .hamburger {
     display: none;
   }
-  /*.menu-4{*/
-  /*  display: flex;*/
-  /*}*/
 }
 
 @media (max-width: 990px) {
@@ -1737,6 +1788,92 @@ a {
     align-content: center;
     align-items: center;
   }
+  .separate2{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #FEF7EC;
+  }
+  .separate3{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #FDECF0;
+  }
+
+  .separate4{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #EBF1FF;
+  }
+
+  .separate5{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #FDEBFF;
+  }
+
+  .separate6{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #0F0F0F;
+  }
+
+  .separate7{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #6E3FF3;
+  }
+
+  .separate8{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .separate9{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #0F0F0F;
+  }
+
+  .separate10{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #0F0F0F;
+  }
+
+  .separate11{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #0F0F0F;
+  }
+
+  .separate12{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #0F0F0F;
+  }
+
 }
 
 @media (max-width: 861px) {

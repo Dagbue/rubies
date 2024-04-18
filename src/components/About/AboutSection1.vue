@@ -3,8 +3,8 @@
     <div class="section-1-alpha">
       <div class="section-1">
         <p class="text-1">Our Vision</p>
-        <p class="text-2">Our vision is to revolutionise the traditional banking experience by <br/> intertwining
-          seamless chats with secure and efficient financial <br/> transactions, setting a new standard in the industry.</p>
+        <p class="text-2">Our vision is to revolutionise the traditional banking experience by intertwining
+          seamless chats with secure and efficient financial transactions, setting a new standard in the industry.</p>
         <!--        <div class="btn-1">-->
         <!--          Get Started-->
         <!--        </div>-->
@@ -111,6 +111,7 @@ export default {
   text-align: left;
   color: #ffffff;
   margin-bottom: 15px;
+  width: 90%;
 }
 
 .btn-1{
@@ -195,14 +196,14 @@ hr.new1 {
 @media (max-width: 700px) {
 
   .text-1{
-    font-size: 45px;
+    font-size: 48px;
     line-height: 50px;
     margin-bottom: 8px;
     text-align: center;
   }
 
   .text-2{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     text-align: center;
   }
@@ -233,15 +234,25 @@ hr.new1 {
 
 @media (max-width: 500px) {
   .text-1{
-    font-size: 35px;
+    font-size: 40px;
     line-height: 40px;
     margin-bottom: 9px;
   }
 
   .text-2{
-    width: 85%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 24px;
+    width: 90%;
   }
+
+  .image-section{
+    padding-bottom: 5%;
+  }
+
+  .section-1-alpha{
+    padding-bottom: 20%;
+  }
+
 }
 </style>

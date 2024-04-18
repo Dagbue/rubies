@@ -151,6 +151,11 @@ span{
     margin-bottom: 9px;
   }
 
+  .section-1-alpha{
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
   .text-2{
     width: 85%;
     margin-left: auto;

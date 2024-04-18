@@ -251,6 +251,33 @@ export default {
 
 @media (max-width: 500px) {
 
+  .text-1{
+    font-size: 55px;
+    line-height: 55px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-2{
+    font-size: 17px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-3-inner-text{
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'ss11' on, 'cv09' on, 'liga' off, 'calt' off;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    /*line-height: 24px; !* 133.333% *!*/
+    letter-spacing: -0.27px;
+  }
 
 }
 </style>

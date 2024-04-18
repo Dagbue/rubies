@@ -3,8 +3,8 @@
     <div class="section-1-alpha">
       <div class="section-1">
         <p class="text-1">Connect, Chat, Transact: <br/> All in One Place</p>
-        <p class="text-2">Connect with family and friends with the chat and messaging feature. <br/>Every message sent
-          sparks a wave of financial possibilities. Every message<br/> opens the door to a world of financial convenience.</p>
+        <p class="text-2">Connect with family and friends with the chat and messaging feature. Every message sent
+          sparks a wave of financial possibilities. Every message opens the door to a world of financial convenience.</p>
         <!--        <p class="text-2">Download the Rubies app</p>-->
         <div class="btn-1">
           Get Started
@@ -143,6 +143,17 @@ export default {
 
 @media (max-width: 500px) {
 
+  .text-1{
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 9px;
+  }
 
+
+  .text-2{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

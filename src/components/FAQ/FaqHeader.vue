@@ -109,6 +109,7 @@ export default {
   margin-top: 25px;
 }
 
+
 @media (max-width: 990px) {
 }
 
@@ -126,13 +127,15 @@ export default {
     font-size: 60px;
     line-height: 60px;
   }
-
-  .text-1{
-    font-size: 60px;
-  }
 }
 
 @media (max-width: 500px) {
-
+  .text-1{
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .section-2{
+    padding-top: 15%;
+  }
 }
 </style>

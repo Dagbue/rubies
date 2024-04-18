@@ -70,10 +70,49 @@ export default {
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.27px;
   padding-top: 5px;
-  width: 70%;
+  width: 90%;
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+}
+
+
+.btn-1{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  gap: 8px;
+  background-color: #F7F8F8;
+  width: 170px;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  color: #191C1F;
+}
+
+.btn-2{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  gap: 8px;
+  background-color: #191C1F;
+  width: 170px;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  color: #FFFFFF;
+}
+.btn-alpha{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
 }
 
 
@@ -94,14 +133,15 @@ export default {
     font-size: 60px;
     line-height: 60px;
   }
-
-  .text-2{
-    width: 90%;
-  }
-
 }
 
 @media (max-width: 500px) {
-
+  .text-1{
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .section-2{
+    padding-top: 15%;
+  }
 }
 </style>

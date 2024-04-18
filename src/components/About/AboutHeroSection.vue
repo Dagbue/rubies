@@ -4,8 +4,8 @@
     <div class="section-alpha">
 
       <div class="section-1">
-        <p class="text-1">We change the way <br/> you do money!</p>
-        <p class="text-2">Rubies helps you spend, send, and save smarter. Welcome to your new <br/> favourite way to do all things money.</p>
+        <p class="text-1">We change the way  you do money!</p>
+        <p class="text-2">Rubies helps you spend, send, and save smarter. Welcome to your new  favourite way to do all things money.</p>
 
 
         <div class="btn-1">
@@ -54,6 +54,10 @@ export default {
   text-align: center;
   margin-bottom: 8px;
   font-family: 'BR-Firma-Bold', sans-serif;
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-2{
@@ -64,6 +68,10 @@ export default {
   text-align: center;
   color: #697582;
   margin-bottom: 24px;
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-1{
@@ -114,15 +122,20 @@ export default {
 }
 
 @media (max-width: 500px) {
-  .text-1{
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 9px;
-  }
+
 
   .image{
     width: 100%;
   }
+
+
+  .text-1{
+    width: 100%;
+    font-size: 43px;
+    line-height: 44px;
+    margin-bottom: 9px;
+  }
+
 
   .text-2{
     width: 85%;

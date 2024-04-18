@@ -2,9 +2,9 @@
   <div class="alpha">
     <div class="section-1-alpha">
       <div class="section-1">
-        <p class="text-1">Seamless payments, <br/> limitless possibilities.</p>
-        <p class="text-2">Making payments and connecting with friends seamlessly through chat <br/>has never been
-          easier. With our intuitive features, you can handle payments <br/> and engage with your circle effortlessly,
+        <p class="text-1">Seamless payments, limitless possibilities.</p>
+        <p class="text-2">Making payments and connecting with friends seamlessly through chat has never been
+          easier. With our intuitive features, you can handle payments and engage with your circle effortlessly,
           all within the same platform.</p>
 
         <!--        <p class="text-2">Download the Rubies app</p>-->
@@ -203,7 +203,18 @@ span{
 }
 
 @media (max-width: 500px) {
+  .text-1{
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 9px;
+  }
 
+
+  .text-2{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 </style>

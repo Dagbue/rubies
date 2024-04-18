@@ -5,8 +5,8 @@
         <p class="text-1">Empower Transactions <br/> with Rubies Cards</p>
 
 
-        <p class="text-2">Applying for and receiving your Rubies cards is a breeze. With just a few <br/>clicks, you
-          can easily get your virtual or physical cards delivered to your <br/> doorstep.</p>
+        <p class="text-2">Applying for and receiving your Rubies cards is a breeze. With just a few clicks, you
+          can easily get your virtual or physical cards delivered to your  doorstep.</p>
 
         <!--        <p class="text-2">Download the Rubies app</p>-->
         <div class="btn-1">
@@ -152,7 +152,22 @@ export default {
 }
 
 @media (max-width: 500px) {
+  .text-1{
+    font-size: 45px;
+    line-height: 44px;
+    margin-bottom: 9px;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
+
+  .text-2{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 </style>
